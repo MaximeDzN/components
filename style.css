@@ -75,6 +75,34 @@ textarea {
   border-radius: 10px;
 }
 
+.input-field input[type="file"]{
+	width: 0.1px;
+	height: 0.1px;
+	opacity: 0;
+	overflow: hidden;
+	position: absolute;
+	z-index: -1;
+}
+
+.inputfile + label {
+  background-color: var(--primary-color);
+  display: inline-block;
+  cursor: pointer;
+  height:150px;
+  width:150px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+  fill: var(--secondary-color);
+}
+
+.inputfile + label svg {
+  height:35%;
+  width:35%;
+}
+
+
 .list {
   height: 200px;
   width: 95%;
@@ -136,6 +164,11 @@ textarea {
 .oc span {
   font-size: 5em;
   color:var(--secondary-color);
+}
+
+.oc a {
+  height:100%;
+  width:100%;
 }
 
 .oc img {
